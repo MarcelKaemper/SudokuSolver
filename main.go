@@ -13,6 +13,7 @@ func main() {
 
 	for i := 0; i < 9; i++{
 		for j := 0; j < 9; j++{
+			// j = index; i = line offset; 10 = cells + \n 
 			cell := string(dat[j+10*i])
 			if cell != "\n" {
 				fmt.Print(cell)
